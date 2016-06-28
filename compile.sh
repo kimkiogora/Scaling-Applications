@@ -1,3 +1,5 @@
-#Compile It
+#!/usr/bin/bash
+#Author: Kim Kiogora 2016 June 28th
 
-gcc -Wall -I/usr/include/mysql -I -shared /sms/srcb/lib_mysqludf_sendsms.c -o /usr/lib/lib_mysqludf_sendsms.so
+#Compile It
+gcc -shared -o -fpic udf_sendsms.so lib_mysqludf_sendsms.c
